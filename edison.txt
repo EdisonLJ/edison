@@ -3,7 +3,7 @@
 TELEFON
 EDISON
                                               BOWSER
-UJNBLÅ SVAMPEN                PRINSESSAN                              LUIGI  SOPKVAST             bbbb             SOPKVAST
+UJNBLÅ SVAMPEN                PRINSESSAN                              LUIGI  SOPKVAST             bbbb             SOPKVAST                 TUGG
 
 
 
@@ -18,9 +18,12 @@ POTATISGRIS
 ÖÄÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖÖ
 
 DAMMTUSS
-                                                                           KLOCKA                  BOSS
-
-
+                                                                           KLOCKA         SKRÄP
+          ____
+         /    \
+        |      |
+        |      |
+         \____/
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   SKRÄP                                                     GLASS   MIT MANGO
 
 
@@ -30,7 +33,7 @@ STEN
 MARIO
 ÄPPELMOS                                          POTATISMOS                        HANDKONTROLL                                                                                                                                                                                                                                                                                                                    BLOABNOO98JBN                                                                    GODIS                                PLOOOOI
                                        EDISON                  GM G
-sssssbeeeerr                           QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQD22222222223469-=--0-9774W217888211XCXCDGG CXCCXZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OIIIIIIIIIIIXCC
+f5rdfehgrfgrhwcsdywwwdf sssssbeeeerr                           QQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQD22222222223469-=--0-9774W217888211XCXCDGG CXCCXZXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/OIIIIIIIIIIIXCC
 APA
 YUKUHDEV  MKKXCVGM                                               SOPBIL
 öä,,kkhhhhhhhgvvvvvcxsdyyuiopööljvvf7cyguyhggyyuuuiiin
