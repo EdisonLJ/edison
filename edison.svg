@@ -1,8 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
-  <rect width="100%" height="100%" fill="black"/>
+  <rect width="50%" height="100%" fill="#000090"/>
   <circle r="50" cx="150" cy="75" fill="yellow"/>
+  <path d="M110,40 180,30 140,10 Z" fill="black"/>
   <circle r="20" cx="30" cy="75" fill="purple"/>
+  <text x="12" y="77" style="font-size:7" fill="white">1234567890</text>
   <circle r="20" cx="270" cy="75" fill="#000030"/>
   <text x="120" y="70">EDISON</text>
-  <text x="110" y="90" style="font-size:10">JLKK,MB       </text>
+  <text x="110" y="90" style="font-size:10">JLKK,MBjhhggfffrrhhhhhhhhhhhhhhhhhhhh.........................</text>
+  <rect x="200" y="20" width="30" height="30" fill="#000090"/>
+  <path d="M0,0 10,0 0,10 Z" fill="red"/>
+  <path d="M50,80 100,70" stroke="pink" stroke-width="4"/>
 </svg>
