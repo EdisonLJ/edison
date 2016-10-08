@@ -1,5 +1,7 @@
-      ÄPPLE                                                                                                                          BLABLABLU                                                                                                                                                                                                                                                                                                                                                          123456789010k5
-
+LASTBIL                         ÄPPLE                   ELSA              ANNA
+                                            BLABLABLU
+123                        456789010k5
+                                                                                                          BRANDBIL                                                                                            MOTORCYKEL
 TELEFON
 EDISON
                                               BOWSER
@@ -9,7 +11,7 @@ HELLOKITTY
 
 POTATISGRIS
 
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;/b,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dhkkbkkgvlclc;x;'x'xc;c;clc;l,ldlm/vkmkvlllxkjndnnzkksjajaiaoOjjiaiahtxuyqwuiuwujyhhU4V5T8G4EDDUIJJNJCJMWMEEJEEL,FGBRD,'XC,U590RICMKVBY OIUHCV,FMBHG0FCIJV,N4RTFGICKCV.MLFBFOHCC.VG,FB0OCL/VN,TFH/;NRTLFGHL;TNTGHLVULNT'GC,GN,R56TFG,BVN;56,CVHVCNG,CYN5,LG;0OMBRK;NV,PNSPIOMMDLKBBBBBBBBBBBBBVJ   3 E,PGFGKKKG,VKKKK BFKVI;GP,'LPLFCP,PO,R ,0E ,P. .,EUK;;
+,CC,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;/b,,,,,,,,,,,,,,,,,,,,,,,,,,,,,dhkkbkkgvlclc;x;'x'xc;c;clc;l,ldlm/vkmkvlllxkjndnnzkksjajaiaoOjjiaiahtxuyqwuiuwujyhhU4V5T8G4EDDUIJJNJCJMWMEEJEEL,FGBRD,'XC,U590RICMKVBY OIUHCV,FMBHG0FCIJV,N4RTFGICKCV.MLFBFOHCC.VG,FB0OCL/VN,TFH/;NRTLFGHL;TNTGHLVULNT'GC,GN,R56TFG,BVN;56,CVHVCNG,CYN5,LG;0OMBRK;NV,PNSPIOMMDLKBBBBBBBBBBBBBVJ   3 E,PGFGKKKG,VKKKK BFKVI;GP,'LPLFCP,PO,R ,0E ,P. .,EUK;;
 ]
 
 
@@ -38,3 +40,4 @@ UKUHDEV  MKKXCVGM                                               SOPBIL
 lEKSAK                                        FULING
 
                                                                                       HÖRLURAR
+OLOF
