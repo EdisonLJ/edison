@@ -1,0 +1,17 @@
+<!doctype html>
+<form><input type="text" size=100 autofocus></form>
+<script>
+function speak(text) {
+    const utt = new SpeechSynthesisUtterance(text);
+    utt.lang = 'sv';
+    console.log(utt);
+    speechSynthesis.speak(utt)
+}
+const form = document.querySelector('form');
+const input = document.querySelector('input');
+form.onsubmit = event => {
+    event.preventDefault();
+    speak(input.value);
+    input.value = '';
+};
+</script>
