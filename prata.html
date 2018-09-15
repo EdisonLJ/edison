@@ -1,12 +1,48 @@
 <!doctype html>
 <form><input type="text" size=100 autofocus></form>
+<button>upprepa med trams</button>
 <script>
-function speak(text) {
-    const utt = new SpeechSynthesisUtterance(text);
-    utt.lang = 'sv';
-    console.log(utt);
-    speechSynthesis.speak(utt)
+function getVoices() {
+    let handle;
+    const p = new Promise((resolve, reject) => {
+        let attempts = 0;
+        handle = setInterval(() => {
+            const voices = speechSynthesis.getVoices();
+            if (voices.length) {
+                clearInterval(handle);
+                resolve(voices);
+                return;
+            }
+            if (++attempts >= 100) {
+                reject(new Error('no voices found before timeout'));
+            }
+        }, 100);
+    })
+    p.finally(() => {
+        clearInterval(handle);
+    });
+    return p;
 }
+
+getVoices().then(voices => {
+    const svoices = voices.filter(voice => voice.lang.startsWith('vi'));
+    console.log(voices);
+});
+
+function speak(text) {
+    console.log(text);
+    text.split('.').forEach(sentence => {
+        if (!sentence) {
+            return;
+        }
+        const utt = new SpeechSynthesisUtterance(sentence);
+        utt.lang = 'sv-SE'; // interop bug here
+        utt.rate = 1;
+        utt.pitch = 0.7;
+        speechSynthesis.speak(utt);
+    });
+}
+
 const form = document.querySelector('form');
 const input = document.querySelector('input');
 form.onsubmit = event => {
@@ -14,4 +50,95 @@ form.onsubmit = event => {
     speak(input.value);
     input.value = '';
 };
+
+// byt ut några ord mot rimord
+function tramsa(text) {
+    const frukter = new Set('ananas banan hallon mango äpple blåbär kiwi russin'.split(' '));
+    const words = text.toLowerCase().split(/\s+/);
+    words.forEach((word, i) => {
+        if (word == 'jag') {
+            words[i] = 'alla barnen';
+        }
+        if (word == 'bak') {
+            words[i] = 'fram';
+        }
+        if (word == 'upp') {
+            words[i] = 'ner';
+        }
+        if (word == 'inte') {
+            words[i] = 'icke';
+        }
+        if (word == 'du') {
+            words[i] = 'Leo';
+        }
+        if (word == 'rumpa' || word == 'strumpa') {
+            words[i] = 'pumpa';
+        }
+        if (word.endsWith('is')) {
+            words[i] = 'fis';
+        }
+        if (word.endsWith('isen')) {
+            words[i] = 'grisen';
+        }
+        if (word.endsWith('ata')) {
+            words[i] = 'tjata';
+        }
+        if (word.endsWith('atar')) {
+            words[i] = 'hatar';
+        }
+        if (word.endsWith('att')) {
+            words[i] = 'katt';
+        }
+        if (word.endsWith('imma')) {
+            words[i] = 'simma';
+        }
+        if (word.endsWith('inner')) {
+            words[i] = 'brinner';
+        }
+        if (word.endsWith('ut')) {
+            words[i] = 'trut';
+        }
+        if (word.endsWith('u')) {
+            words[i] = 'hörrdu du';
+        }
+        if (word == 'vem') {
+            words[i] = 'ingen';
+        }
+        if (word.endsWith == 'ig') {
+            words[i] = 'rolig';
+        }
+        if (frukter.has(word)) {
+            words[i] = 'potatis';
+        }
+    });
+    while (Math.random() < 0.3) {
+        words.push('punkt slut');
+    }
+    return words.join(' ');
+}
+
+function reverse(text) {
+    const words = text.toLowerCase().split(/\s+/);
+    words.reverse();
+    return words.join(' ');
+}
+
+const button = document.querySelector('button');
+function lyssna() {
+    const recognition = new webkitSpeechRecognition(); // interop
+    recognition.lang = 'sv-SE';
+    recognition.continuous = false;
+    recognition.onresult = event => {
+        console.log(event);
+        console.log(event.results);
+        Array.from(event.results).forEach(result => {
+            const text = result[0].transcript;
+            const funText = tramsa(text);
+            input.value = funText;
+            speak(funText);
+        });
+    };
+    recognition.start();
+}
+button.onclick = lyssna;
 </script>
