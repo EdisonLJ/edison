@@ -111,8 +111,16 @@ function tramsa(text) {
             words[i] = 'potatis';
         }
     });
-    while (Math.random() < 0.3) {
-        words.push('punkt slut');
+    if (Math.random() < 0.2) {
+        const syllables = 1 + (8 * Math.random()) << 0;
+        for (let n = 0; n < syllables; n++) {
+            const vowel = ['A', 'E', 'I'][3 * Math.random() << 0];
+            words.push('H' + vowel);
+        }
+    } else {
+        while (Math.random() < 0.2) {
+            words.push('punkt slut');
+        }
     }
     return words.join(' ');
 }
