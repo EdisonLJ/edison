@@ -68,31 +68,32 @@ function randomize(array) {
 
 // byt ut några ord mot rimord
 function tramsa(text) {
-    const frukter = new Set('ananas banan hallon mango äpple blåbär kiwi russin'.split(' '));
     const words = text.toLowerCase().split(/\s+/);
 
-    const langs = [
-        ['danska', 'da', 'Halvfjerds ni'],
-        ['engelska', 'en', 'Yeah, yeah, fine'],
-        ['finska', 'fi', 'Ei saa peittää'],
-        ['franska', 'fr-FR', 'Chèvre chaud'],
-        ['italienska', 'it', 'Cappuccino'],
-        ['japanska', 'ja', 'おねがいします'],
-        ['kinesiska', 'zh-TW', '鱼香茄子'],
-        ['koreanska', 'ko', '비빔밥'],
-        ['norska', 'nb', 'Gulebøj'],
-        ['polska', 'pl', 'Nie mówię po polsku'],
-        ['rumänska', 'ro', 'Extraordinar'],
-        ['ryska', 'ru', 'Союз'],
-        ['spanska', 'es', 'Por supuesto'],
-        ['svenska', 'sv', 'Hej hej'],
-        ['thailändska', 'th', 'ตกลง'],
-        ['tyska', 'de', 'Achtung Weihnacht'],
-    ];
-    for (const [lang, code, ack] of langs) {
-        if (words.includes(lang)) {
-            globalState.lang = code;
-            return `${ack}, ${text}`;
+    if (words.includes('prata')) {
+        const langs = [
+            ['danska', 'da', 'Halvfjerds ni'],
+            ['engelska', 'en', 'Yeah, yeah, fine'],
+            ['finska', 'fi', 'Ei saa peittää'],
+            ['franska', 'fr-FR', 'Chèvre chaud'],
+            ['italienska', 'it', 'Cappuccino'],
+            ['japanska', 'ja', 'おねがいします'],
+            ['kinesiska', 'zh-TW', '鱼香茄子'],
+            ['koreanska', 'ko', '비빔밥'],
+            ['norska', 'nb', 'Gulebøj'],
+            ['polska', 'pl', 'Nie mówię po polsku'],
+            ['rumänska', 'ro', 'Extraordinar'],
+            ['ryska', 'ru', 'Союз'],
+            ['spanska', 'es', 'Por supuesto'],
+            ['svenska', 'sv', 'Hej hej'],
+            ['thailändska', 'th', 'ตกลง'],
+            ['tyska', 'de', 'Achtung Weihnacht'],
+        ];
+        for (const [lang, code, ack] of langs) {
+            if (words.includes(lang)) {
+                globalState.lang = code;
+                return `${ack}, ${text}`;
+            }
         }
     }
 
@@ -148,6 +149,7 @@ function tramsa(text) {
         if (word.endsWith == 'ig') {
             words[i] = 'rolig';
         }
+        const frukter = new Set('ananas banan hallon mango äpple blåbär kiwi russin'.split(' '));
         if (frukter.has(word)) {
             words[i] = 'potatis';
         }
