@@ -26,5 +26,6 @@ function update() {
   div.textContent = `${a}\u00D7${b}`;
 }
 update();
-window.onclick = update;
+document.documentElement.addEventListener('mouseup', update)
+document.documentElement.addEventListener('touchup', update);
 </script>
