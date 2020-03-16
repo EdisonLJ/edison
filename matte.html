@@ -1,0 +1,30 @@
+<!doctype html>
+<title>Multiplikation</title>
+<meta charset=utf8>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+#problem {
+  font-family: sans-serif;
+  font-size: 100px;
+
+  /* center on screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+</style>
+<noscript>Det här funkar inte alls utan skript.</noscript>
+<div id="problem"></div>
+<script>
+const div = document.getElementById('problem');
+function update() {
+  const a = Math.floor(Math.random() * 10) + 1;
+  const b = Math.floor(Math.random() * 10) + 1;
+  div.textContent = `${a}\u00D7${b}`;
+}
+update();
+window.onclick = update;
+</script>
