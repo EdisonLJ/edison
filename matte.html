@@ -19,12 +19,16 @@
 <noscript>Det här funkar inte alls utan skript.</noscript>
 <div id="problem"></div>
 <script>
-const MIN = 2;
-const MAX = 6;
+function random() {
+  const MIN = 2;
+  const MAX = 6;
+  return Math.floor(Math.random() * (MAX - MIN)) + MIN;
+}
+
 const div = document.getElementById('problem');
 function update() {
-  const a = Math.floor(Math.random() * 10) + 1;
-  const b = Math.floor(Math.random() * (MAX - MIN)) + MIN;
+  const a = random();
+  const b = random();
   div.textContent = `${a}\u00D7${b}`;
 }
 update();
