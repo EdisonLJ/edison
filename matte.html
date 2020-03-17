@@ -22,7 +22,7 @@
 function random() {
   const MIN = 2;
   const MAX = 6;
-  return Math.floor(Math.random() * (MAX - MIN)) + MIN;
+  return Math.floor(Math.random() * (MAX + 1 - MIN)) + MIN;
 }
 
 const div = document.getElementById('problem');
